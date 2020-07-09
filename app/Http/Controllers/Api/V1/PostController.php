@@ -11,9 +11,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
     /**
-     * つぶやき　一覧
-     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     * つぶやき一覧
+     * @param Request $request
+     * @return PostResource
      */
     public function index(Request $request)
     {
